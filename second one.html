@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muthu Ganesh | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* Animated Background */
+body::before{
+content:"";
+position:fixed;
+width:200%;
+height:200%;
+background:radial-gradient(circle at 20% 30%,#00f7ff22 0%,transparent 25%),
+radial-gradient(circle at 80% 70%,#00f7ff22 0%,transparent 25%);
+animation:moveBg 10s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveBg{
+0%{transform:translate(0,0);}
+50%{transform:translate(-5%, -5%);}
+100%{transform:translate(0,0);}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header h1{
+color:#00f7ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+section{
+padding:80px 10%;
+}
+
+.hero{
+text-align:center;
+padding-top:120px;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+.hero span{
+color:#00f7ff;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00f7ff;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+margin-right:10px;
+}
+
+.projects, .certificates{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#222;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.view-btn{
+display:inline-block;
+margin-top:10px;
+color:#00f7ff;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+font-size:14px;
+}
+
+@media(min-width:768px){
+.projects, .certificates{
+grid-template-columns:repeat(2,1fr);
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Muthu Ganesh</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Hello, I'm <span>Muthu Ganesh</span></h2>
+<p>Engineering Student | AI & Web Development Enthusiast</p>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+<a href="https://www.linkedin.com/in/muthu-ganesh-1aab47358" target="_blank" class="btn">LinkedIn</a>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am passionate about Artificial Intelligence, Web Development, and building innovative AI-driven solutions. 
+I continuously learn and implement modern technologies in real-world projects.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>House Selling Website</h3>
+<p>Built using HTML & CSS during internship training.</p>
+<a href="https://github.com/muthuganesh27086" target="_blank" class="view-btn">View on GitHub</a>
+</div>
+
+<div class="card">
+<h3>AI Workshop Projects</h3>
+<p>Hands-on AI tools and intelligent applications.</p>
+<a href="https://github.com/muthuganesh27086" target="_blank" class="view-btn">View on GitHub</a>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES SECTION -->
+<section id="certificates">
+<h2>Certificates & Achievements</h2>
+
+<div class="certificates">
+
+<div class="card">
+<img src="certificates/nasscom.jpg" alt="NASSCOM Certificate">
+<h3>Digital Fundamentals - NASSCOM</h3>
+<p>Certificate of Participation in Digital Fundamentals Application (STEM).</p>
+<a href="certificates/nasscom.jpg" target="_blank" class="view-btn">View Certificate</a>
+</div>
+
+<div class="card">
+<img src="certificates/ai-workshop.jpg" alt="AI Workshop Certificate">
+<h3>AI Trends Workshop</h3>
+<p>Completed AI Tools Workshop with hands-on training.</p>
+<a href="certificates/ai-workshop.jpg" target="_blank" class="view-btn">View Certificate</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: muthuganesh27086@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/muthu-ganesh-1aab47358</p>
+<p>GitHub: github.com/muthuganesh27086</p>
+</section>
+
+<footer>
+© 2026 Muthu Ganesh | All Rights Reserved
+</footer>
+
+</body>
+</html>

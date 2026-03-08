@@ -1,0 +1,36 @@
+.profile-pic{
+width:100px;
+height:100px;
+border-radius:50%;
+display:block;
+margin:0 auto 15px auto;
+object-fit:cover;
+border:2px solid #00f7ff;
+}
+
+#skills{
+text-align:center;
+}
+
+.skills-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+}
+
+.skill-box{
+background:#1a1a1a;
+padding:12px 20px;
+border-radius:8px;
+border:1px solid #00f7ff;
+font-size:14px;
+transition:0.3s;
+}
+
+.skill-box:hover{
+background:#00f7ff;
+color:black;
+transform:scale(1.05);
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muthu Ganesh | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* Animated AI Background */
+body::before{
+content:"";
+position:fixed;
+width:200%;
+height:200%;
+background:radial-gradient(circle at 20% 30%,#00f7ff22 0%,transparent 25%),
+radial-gradient(circle at 80% 70%,#00f7ff22 0%,transparent 25%);
+animation:moveBg 10s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveBg{
+0%{transform:translate(0,0);}
+50%{transform:translate(-5%, -5%);}
+100%{transform:translate(0,0);}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111;
+position:sticky;
+top:0;
+}
+
+header h1{
+color:#00f7ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+section{
+padding:80px 10%;
+}
+
+.hero{
+text-align:center;
+padding-top:120px;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+.hero span{
+color:#00f7ff;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00f7ff;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+margin-right:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#222;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+font-size:14px;
+}
+
+@media(min-width:768px){
+.projects{
+grid-template-columns:repeat(2,1fr);
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Muthu Ganesh</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<img src="en_photo-removebg-preview.png" alt="Muthu Ganesh" class="profile-pic">
+<h2>Hello, I'm <span>Muthu Ganesh</span></h2>
+<p>Engineering Student | AI & Web Development Enthusiast</p>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+<a href="https://www.linkedin.com/in/muthu-ganesh-1aab47358" target="_blank" class="btn">LinkedIn</a>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am computer science student passionate about Artificial Intelligence, Web Development, and building innovative AI-driven solutions. 
+I continuously learn and implement modern technologies in real-world projects.</p>
+</section>
+
+<section id="skills">
+
+<h2>Skills & Tools</h2>
+
+<div class="skills-container">
+
+<div class="skill-box">HTML</div>
+
+<div class="skill-box">CSS</div>
+
+<div class="skill-box">Python</div>
+
+<div class="skill-box">Java (Basic Knowledge)</div>
+
+<div class="skill-box">Power BI</div>
+
+<div class="skill-box">Figma</div>
+
+<div class="skill-box">AI Fundamentals</div>
+
+</div>
+
+</section>
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>House Selling Website</h3>
+<p>Built using HTML & CSS during internship training.</p>
+<a href="https://github.com/muthuganesh27086-droid/house-selling-website" target="_blank" style="color:#00f7ff;">View on GitHub</a>
+</div>
+
+<div class="card">
+<h3>IBM Hackathon</h3>
+<p>Build a chatbot to answer the questions in a PDF.</p>
+<a href="https://github.com/muthuganesh27086-droid/muthuganeshibm" target="_blank" style="color:#00f7ff;">View on GitHub</a>
+</div>
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<p>You can view all my certificates here.</p>
+
+<a href="certificates.html" class="btn" target="_blank">
+View All Certificates
+</a>
+
+</section><br>
+
+<section id="contact">
+<h2>Contact</h2>
+E-mail:<a href="muthuganesh27086@gmail.com" target="_blank">muthuganesh27086@gmail.com</a><br>
+Phone No:9080626554 
+<p>LinkedIn:<a href="https://www.linkedin.com/in/muthu-ganesh-1aab47358" target="_blank">visit profile-></a>
+<p>GitHub: <a href="https://github.com/muthuganesh27086-droid">visit github</a></p>
+Location:<p>
+<i class="fa-solid fa-location-dot"></i>
+<a href="https://maps.google.com/?q=coimbatore,tamlnadu,India" target="_blank">
+coimbatore,tamilnadu
+</a>
+</p> 
+</section><br>
+
+<footer>
+© 2026 Muthu Ganesh | All Rights Reserved
+</footer>
+
+</body>
+</html>
